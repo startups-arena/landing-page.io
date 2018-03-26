@@ -8,6 +8,7 @@ $icon-font-path: '../fonts/';
 body{
   font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
+  position:fixed;
 }
 
 .logo{
@@ -22,7 +23,7 @@ body{
 }
 
 .form-content{
-  background-color: #000;
+  background-color: #1b1e3c;
   color:#fff;
   width: 415px;
   padding:5% 3%;
