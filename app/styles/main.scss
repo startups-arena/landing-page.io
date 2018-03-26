@@ -52,13 +52,13 @@ body{
     background-color:#fff;
     color:#000;
     margin-top:20px;
-  border: 0 solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-  outline: 1px solid;
-  outline-color: rgba(255, 255, 255, .5);
-  outline-offset: 0px;
-  text-shadow: none;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 
     &:hover{
       background-color:#3bb6b3;
@@ -70,4 +70,8 @@ body{
       text-shadow: 1px 1px 2px #427388; 
     }
   }
+}
+
+.players-img{
+  width:100%;
 }
