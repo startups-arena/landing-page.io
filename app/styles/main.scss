@@ -1,0 +1,73 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.logo{
+  margin-top:10%;
+  width: 200px;
+}
+
+.content{
+  margin-top:10%;
+  font-weight:500;
+  font-size:1.3em;
+}
+
+.form-content{
+  background-color: #000;
+  color:#fff;
+  width: 415px;
+  padding:5% 3%;
+  position:fixed;
+  bottom:0;
+  left:40%;
+  height: 50vh;
+
+  label{
+    margin-top:15px;
+  }
+
+  input{
+    background-color:transparent;
+    border: 1px solid #aaa;
+    height: 40px;
+    width: 100%;
+    padding-left:10px;
+
+    &:active, &:focus{
+      outline: none !important;
+      border: 1px solid #3bb6b3;
+    }
+  }
+
+  input[type=submit] {
+    background-color:#fff;
+    color:#000;
+    margin-top:20px;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+    &:hover{
+      background-color:#3bb6b3;
+      border: none;
+      color:#fff;
+      border: 1px solid;
+      outline-color: rgba(255, 255, 255, 0);
+      outline-offset: 15px;
+      text-shadow: 1px 1px 2px #427388; 
+    }
+  }
+}
