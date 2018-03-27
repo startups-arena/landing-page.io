@@ -8,7 +8,9 @@ $icon-font-path: '../fonts/';
 body{
   font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
-  position:fixed;
+  @media (min-width: 576px) {
+    position:fixed;
+  } 
 }
 
 .logo{
@@ -25,11 +27,32 @@ body{
 .form-content{
   background-color: #1b1e3c;
   color:#fff;
-  width: 415px;
   padding:5% 3%;
-  position:fixed;
   bottom:0;
-  left:40%;
+  
+  @media (min-width: 576px) {
+    left: 0;
+  }
+
+  @media (min-width: 768px) {
+    width: 415px;
+    left: 40%;
+    position:fixed;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    width: 415px;
+    left: 40%;
+    position:fixed;
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    width: 415px;
+    left: 40%;
+    position:fixed;
+  }
 
   label{
     margin-top:15px;
